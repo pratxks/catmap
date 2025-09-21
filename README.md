@@ -1,24 +1,83 @@
-# CatMap
-Welcome to CatMap! This innovative web application provides real-time information about the availability of parking spaces on campus. With the help of this app, you can easily locate the nearest parking lot and determine how full it is at the moment.
+# CatMap v2
 
-## How it Works
-The map displays each parking lot with a pin, and the color of the pin indicates the current level of occupancy. Green pins indicate that the parking lot has spots available and red pins indicate that the parking lot is full. This way, you can make an informed decision about where to park and save time searching for a spot.
+CatMap v2 is a campus parking navigation app currently being upgraded to provide **enhanced features** like **predictive parking availability** and **user login authentication**. The app helps users find the nearest parking lots, check real-time occupancy, and plan ahead with AI-driven predictions.
 
-You can also select the pin to see the selected parking lot's occupancy level. This information will help you decide whether you should park in that parking lot or move on to the next one.
+## 📸 Screenshots / UI Mockups
 
-## Features
-- Real-time information about parking lot occupancy
-- Easy-to-use map interface with color-coded pins
-- Information about each parking lot's occupancy level
-- User-friendly design
-- Available on desktop and mobile devices
+![CatMap UI](./src/catmap.svg)  
 
-## Getting Started
-To get started, simply navigate to our web app and allow the app to access your location. The app will display the nearest parking lots and their current occupancy levels. You can also search for a specific parking lot or filter by parking lot type.
+> Full UI mockup showing map interface, predictive information, and login panel.
 
-## Screenshots
-![Screen Shot 2023-04-12 at 8 19 53 PM](https://user-images.githubusercontent.com/27981761/231618852-19233ee8-ab5a-41a9-8b16-6c55c3787cf2.png)
-![Screen Shot 2023-04-12 at 9 02 15 PM](https://user-images.githubusercontent.com/27981761/231618941-dff3938c-115d-4753-a757-14c32966979b.png)
+## 🌟 Features
 
-## Conclusion
-Whether you're a student, staff member, or visitor, CatMap makes finding a parking space on campus a breeze. Never worry about circling around for a spot again - try it out today!
+- **Real-time parking lot availability** with color-coded pins  
+- **Predictive parking occupancy** to plan ahead  
+- **User authentication & login system** for personalized experience  
+- **OpenStreetMap powered map** for accurate location tracking  
+- **Mobile and desktop friendly interface**  
+- AI-powered insights for optimized parking recommendations  
+
+## 🛠 Technologies Used
+
+- **Backend:** Java, Spring Boot (with Thymeleaf for templating)  
+- **Frontend:** JavaScript, Thymeleaf templates  
+- **Mapping API:** OpenStreetMap  
+- **AI / Prediction:**  
+  - Weka or Deeplearning4j for Java-based predictive analytics  
+  - Optional: TensorFlow Java API for advanced models  
+- **Database:** MySQL / PostgreSQL (for parking history and user accounts)  
+
+
+## 📈 How it Works
+
+1. The **map interface** displays parking lots as pins.  
+2. **Pin colors** indicate occupancy:
+   - Green → Available  
+   - Yellow → Filling Up  
+   - Red → Full  
+3. Click a pin to see detailed occupancy info.  
+4. **Future Prediction:** AI models forecast parking availability for the next 30–60 minutes.  
+5. **User Login:** Access personalized settings, saved preferences, and history.  
+
+## 🔮 Future Plans
+
+- Add **mobile push notifications** for parking alerts  
+- Implement **route optimization** to available spots  
+- Expand **AI prediction models** using historical campus traffic  
+- Deploy **cloud-hosted backend** for scalability  
+
+## 📌 Why CatMap v2 Matters
+
+Finding a parking space on campus can be frustrating. CatMap v2 leverages AI, predictive analytics, and an intuitive map interface to:  
+
+- Save time for students, staff, and visitors  
+- Reduce traffic congestion in parking areas  
+- Enable smarter, data-driven parking management  
+
+## 📂 Project Structure
+<pre>
+CatMap-v2/
+├─ src/main/java       # Java backend source code
+├─ src/main/resources  # Thymeleaf templates & static assets
+├─ src/main/webapp     # Web resources (JS/CSS)
+├─ catmap.svg          # Full UI mockup
+└─ README.md           # Project documentation
+</pre>
+
+## 🤝 Contribution
+
+Contributions are welcome! Feel free to **fork**, submit **issues**, or create **pull requests**.  
+
+## 🚀 Getting Started
+
+```bash
+# Clone Repository
+git clone https://github.com/yourusername/catmap-v2.git
+cd catmap-v2
+
+# Build & Run Backend
+./mvnw spring-boot:run
+
+# Open Application
+# Navigate to http://localhost:8080 in your browser
+```
