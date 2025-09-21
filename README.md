@@ -17,7 +17,7 @@ CatMap v2 is a campus parking navigation app currently being upgraded to provide
 - **Mobile and desktop friendly interface**  
 - AI-powered insights for optimized parking recommendations  
 
-## 🛠 Technologies Used
+## 🛠 Key Technologies
 
 - **Backend:** Java, Spring Boot (with Thymeleaf for templating)  
 - **Frontend:** JavaScript, Thymeleaf templates  
